@@ -1,0 +1,90 @@
+/*
+   SI 539 Midterm Prep: Build It
+   Work level by level. Don't edit index.html.
+*/
+
+:root{
+    --white: #FFFFFF;
+}
+.jumper  {
+  position: absolute;
+  top: -20px;
+}
+
+.jumper a {
+  position: absolute;
+  top: -65px;
+
+}
+.jumper a:focus {
+  top: 25px;
+}
+
+/* Level 2: Resizing Images */
+img {
+    width: 100px;
+    height: 100px;
+    object-fit:contain;
+}
+
+/* Level 3: Grid container*/
+.first {
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+}
+
+/* Level 4: Grid children */
+
+.first div {
+border: 3px dashed #7332a8;
+background-color: #adb5bd;
+border-radius: 20px;
+padding: 45px, 20px;
+
+}
+
+.first > *:last-child {
+    grid-column: 1/-1;
+    border-radius: 0px;
+}
+
+
+
+.first :nth-child(3n + 2):not(p){
+    background: #FFFFFF;
+
+}
+
+
+
+.first :hover {
+    color: var(--white);
+    background: #7332a8;
+}
+
+
+.special {
+    font-family:'Brush Script MT';
+    font-weight: bold;
+}
+
+/* Level 7: Change font of the special class */
+
+/* Level 8: Hover */
+
+/* Level 9: Banner image (.banner) */
+
+/* Level 10: Desktop breakpoint (800px) */
+
+/* Bonus: justify-content vs. justify-items
+   Explain the difference in a comment here. */
+
+/* Bonus: Why can't you use display: none to hide
+    your skip to main? Explain here? */
+
+/* Bonus: What CSS style could you use to give
+    space between the red border and the grid items?
+    Which selector would you add it to? */
+
+/* Bonus: Why does .banner overwrite the
+    img selector? */
